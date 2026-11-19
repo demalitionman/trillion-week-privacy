@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trillion Week: privacy, rules and support</title>
+<meta name="description" content="What Trillion Week keeps on your device, what optional services receive, the rules for accounts, and how to request deletion.">
+<meta name="theme-color" content="#0A0E17">
+<style>
+  @font-face { font-family: "Inter"; font-style: normal; font-weight: 400 800; font-display: swap; src: url(fonts/inter-latin.woff2) format("woff2"); }
+  @font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 300 700; font-display: swap; src: url(fonts/space-grotesk-latin.woff2) format("woff2"); }
+  :root { color-scheme: dark; --void: #05070C; --bg: #0A0E17; --surface: #111827; --ink: #EEF3FF; --muted: #A3AFC6; --gold: #F2C46D; --cyan: #3DE8FF; --line: rgba(160, 190, 255, 0.20); --hair: rgba(160, 190, 255, 0.10); }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 1rem/1.55 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; overflow-wrap: anywhere; }
+  .bar { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bottom: 1px solid var(--hair); padding: env(safe-area-inset-top, 0px) max(16px, env(safe-area-inset-right, 0px)) 0 max(16px, env(safe-area-inset-left, 0px)); }
+  .bar-in { max-width: 680px; margin: 0 auto; display: flex; align-items: center; min-height: 52px; }
+  .back { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; min-width: 44px; padding: 0 14px 0 10px; margin-left: -10px; border-radius: 12px; color: var(--cyan); font-weight: 650; text-decoration: none; }
+  .back:hover, .back:focus-visible { background: var(--surface); }
+  .back:focus-visible, a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+  main { max-width: 680px; margin: 0 auto; padding: 20px max(16px, env(safe-area-inset-right, 0px)) calc(48px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+  h1 { font: 700 2rem/1.15 "Space Grotesk", system-ui, sans-serif; color: var(--gold); margin: 0 0 6px; letter-spacing: -0.01em; }
+  h2 { font: 700 1.2rem/1.3 "Space Grotesk", system-ui, sans-serif; margin: 28px 0 6px; }
+  p, li { color: var(--ink); } .muted { color: var(--muted); }
+  ul { padding-left: 1.2em; } li { margin: 4px 0; }
+  a { color: var(--cyan); }
+  section { border-top: 1px solid var(--line); scroll-margin-top: 64px; }
+  .short { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; }
+  .toc { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; margin: 16px 0 8px; }
+  .toc a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; color: var(--ink); }
+  .bottom { margin-top: 36px; }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+</head>
+<body>
+<nav class="bar" aria-label="Back to the game"><div class="bar-in">
+  <a class="back" href="https://trillion-week.netlify.app/"><span aria-hidden="true">←</span> Back to the game</a>
+</div></nav>
+<main>
+  <h1>Privacy, rules and support</h1>
+  <p class="muted">Trillion Week 1.0. Last updated 19 November 2026.</p>
+
+  <p class="short">Trillion Week is published by Nathan Waldron, trading as Adaptive Margin. Core play needs no account, and your progress and settings are kept on your device. Optional network features are described below: source news, AI conversations, subscription checks and account deletion. Their availability can differ between the website and native app, and can change when a service is unavailable. Network requests also expose connection information to the services handling them. Recorded dialogue and written choices remain available without an AI account.</p>
+
+  <ul class="toc" aria-label="On this page">
+    <li><a href="#phone">On your phone</a></li>
+    <li><a href="#ai">Live characters</a></li>
+    <li><a href="#online">Online play</a></li>
+    <li><a href="#briefing">World briefing</a></li>
+    <li><a href="#premium">Trillion Week Live</a></li>
+    <li><a href="#delete">Delete an old account</a></li>
+    <li><a href="#reset">Start again</a></li>
+    <li><a href="#rules">Rules</a></li>
+    <li><a href="#age">Age</a></li>
+    <li><a href="#support">Support</a></li>
+  </ul>
+
+  <section id="phone">
+  <h2>What stays on your phone</h2>
+  <ul>
+    <li>Your saves, settings, name, avatar and progress are stored on this device. If you choose optional network AI, your entered name and limited game context are sent as described below. Choosing a nickname account also sends its nickname and preset avatar.</li>
+    <li>Your selfie, if you take one. It is restyled on the phone and never uploaded.</li>
+    <li>Your camera during video calls, if you turn it on. It fills the little self-view window and nothing else. It isn't recorded, saved or sent anywhere, and it stops when the call ends.</li>
+    <li>Your AI key, if you add one. Normally it is held in memory and forgotten when the game closes. If you tick <i>Remember my key on this device</i>, it is saved on this phone, in plain text, apart from your progress. It is never part of a progress download. Untick the box, tap Forget the key, or use Restart everything, and it is deleted.</li>
+    <li>Lines you report in a live conversation. They are kept on this phone and only reach us if you email them.</li>
+  </ul>
+  <p>Character voices and the short films when you start a mode are recordings that come with the game. They play on your phone. Nothing listens back: the game doesn't use your microphone, and it doesn't use your location or contacts either.</p>
+  <p>On iPhone, the app keeps a second copy of your three saves (Spend, One lifetime and Rise) in the app's own storage on the phone, to help recover if iOS clears the web view. Back up important progress; storage or device failures can still lose data. It never leaves the phone, except in your own iCloud or iTunes backup if you make one.</p>
+  </section>
+
+  <section id="online">
+  <h2>Online play: not in this version</h2>
+  <p>Trillion Week 1.0 has no online play: no leaderboards, leagues, player market, or help and sabotage between players, and no scores or runs are sent. This does not prevent the separately optional World briefing, Trillion Week Live and its nickname, or deletion of an account.</p>
+  <p>If a later version adds online play, it will stay optional, nothing will be sent until you choose a nickname and agree to the rules, and this page will change first, with a new date at the top.</p>
+  </section>
+
+  <section id="delete">
+  <h2>Delete an online account from an earlier version</h2>
+  <p>Earlier test versions of the website had online play. If you chose a nickname then and have not deleted the account, our server can hold the nickname and avatar, a random account number and sign-in token, your scores, runs and league, any profile line, your record of help and sabotage sent and received, the players you blocked, and reports about the account.</p>
+  <p>To delete it, open the game on the device you played on. The home screen shows <b>Your old online account</b>: tap <b>Delete my online account</b>, then tap again. This deletion request is made only when you tap it.</p>
+  <p>When the server confirms successful account deletion, it removes the account and its associated active account, profile, game and subscription records. Small deletion markers remain to prevent delayed requests from recreating deleted records; they do not contain the nickname, profile text or game history. Other players' records may retain the former random account identifier. Account deletion is separate from subscription cancellation and from records independently handled by hosting or AI providers.</p>
+  <p>Rate-limit counters use time windows. A daily cleanup job is configured to remove expired counter buckets. These operational records are separate from deleting your account.</p>
+  <p>If you can't reach that device, email us your nickname (see <a href="#support">Support</a>) to request manual account deletion.</p>
+  </section>
+
+  <section id="briefing">
+  <h2>World briefing (optional)</h2>
+  <p>Our channels and presenters are fictional. The game weather desk works offline and does not request your location or a real forecast. Choosing a forecast city does not move your character or change your saved life. Presenter commentary is our own writing; any real-world source headline is credited separately.</p>
+  <p>Game news is available from the first screen and works offline. Live source news is on by default for a new player; an earlier choice to turn it off is preserved. You can turn live news off in News &amp; weather. When it is on, your device requests source reports from our Netlify server without sending your player token, saved life, AI key or conversations. The server fetches from a fixed, permitted source list. Your news preference stays on this device; reports are held in memory for this game session rather than saved into your life or progress backup. Our host processes connection information to serve requests.</p>
+  <p>Source links open the publisher's website, where its own privacy and subscription terms apply. Report dates are shown. Coverage of a claim does not establish its truth; reported social trends are not measurements of reach. Fictional scenarios use our original writing and keep your life’s time, cash and score as they are. Turn off live news in the briefing to stop its requests.</p>
+  </section>
+
+  <section id="ai">
+  <h2>AI conversations (optional)</h2>
+  <p><b>Hosted AI without your own key</b> is optional and depends on the conversation service being available. It stays off until you agree in Settings. When enabled, the game sends up to six recent conversation lines, the selected character's identity, limited character-specific game context (including the name you entered), recent memories and the written scene through our Netlify service and AI Gateway to generate and check a reply using Anthropic. It also sends a random client identifier and a request identifier for allowance and abuse controls. This route does not send your full save, personal provider key, photographs or microphone input. If the service is unavailable or a reply cannot be checked, written dialogue remains available.</p>
+  <p>The application's AI accounting records contain hashed identifiers, request status and usage/cost measurements rather than conversation text. Your conversation history is retained locally by the game. Hosting and AI providers also process requests under their applicable terms. Netlify's published Gateway documentation describes request metadata for logging, auditing and support, and customer-requested enhanced logging. These are separate from the game's own accounting records. <a href="https://docs.netlify.com/build/build-with-ai/security-and-privacy-for-ai-features/" rel="noopener">Netlify security and privacy</a>; <a href="https://platform.claude.com/docs/en/manage-claude/api-and-data-retention" rel="noopener">Anthropic API data retention</a>.</p>
+  <p>When this route is offered, the studio covers its limited allowance; you are not charged by us for it. Per-device, network and shared monthly limits can stop the service before a daily allowance is used. Written choices remain available without limits. Requests are never automatically retried or silently switched to your own paid key.</p>
+  <p>To prevent duplicate bills and abuse, the game keeps a random browser identifier on this device. Funded builds share a separate accounting database containing salted hashes of that identifier, connection address and request identifiers, request status and aggregate token/cost measurements. The application does not store the raw address, player name or conversation text in those records. Pseudonymous request rows older than 31 days are removed when the service next handles a request; aggregate monthly costs remain. An idle or retired service requires operator cleanup. Earlier previews use isolated allowance stores until retired. Consent is remembered on this device. Choose <i>Use written dialogue</i> or untick the agreement to stop sending conversations; it also interrupts an outstanding request. A request already sent may still incur provider usage. Clearing this site’s data removes the local preference and random identifier. Provider failures, offline play and exhausted allowance return to written dialogue without applying a purchase or choice.</p>
+  <p><b>AI on this device (experimental):</b> Advanced Settings also offers an optional WebLLM model. It stays off until you agree to download it. The runtime is shipped with this game; model files download directly from Hugging Face and MLC’s library hosts, which receive ordinary connection information. Conversation text is processed on your device. There is no AI-provider charge for local inference, but the download uses several hundred MB, graphics memory, storage, battery and network data. The model cache can remain after you stop local AI; clear this site’s browser data to remove it. No key is needed. Written game rules decide consequences, and incompatible devices keep the written dialogue.</p>
+  <h3>Your own provider key (optional alternative)</h3>
+  <p>As an alternative to the hosted service, where available, characters can answer live if you connect an account you hold with an AI provider. Using your own key means you have an account with that provider, and the provider may charge you for what the characters say. Their prices and terms are theirs, not ours. We sell nothing for this and take nothing from it.</p>
+  <p>AI conversations are available in Settings and your Profile. After your first purchase, an optional card also explains the available routes. Ignoring them changes nothing. <i>Use my own key</i> explains how, step by step, and every step has <i>Skip for now</i>.</p>
+  <p>The own-key route stays off until you add a key and tick its agreement to send conversations to your chosen provider. Then what you type in conversations and a short summary of your game, including the name you entered, go straight from your phone to the provider you picked. For Anthropic that is api.anthropic.com. For other services it is the address you enter. It doesn't pass through our server, and we never see it. That provider's own privacy policy applies. Anthropic's is at <a href="https://platform.claude.com/docs/en/manage-claude/api-and-data-retention" rel="noopener">Anthropic API data retention</a>.</p>
+  <ul>
+    <li>Every live reply is labelled AI-generated.</li>
+    <li>Replies are checked against a list of banned content before you see them. A blocked reply is replaced.</li>
+    <li>Tap Report on any AI line to hide it. It is noted on this phone.</li>
+    <li>Switch live characters off, or forget the key, at any time in your Profile.</li>
+  </ul>
+  <p>With all optional AI routes off, conversations use our written lines and send no conversation data to an AI provider. A key is not required for the separately consented hosted service when it is available. Generated conversation alone does not schedule work, pay money or make a promise; use the displayed game action to commit a choice.</p>
+  </section>
+
+  <section id="premium">
+  <h2>Trillion Week Live (optional subscription)</h2>
+  <p>Trillion Week Live is an optional subscription where it is offered in your installed version. The offer identifies the store, price, billing period, renewal terms and included allowance before you buy. A server availability response alone does not mean a subscription is on sale in your app.</p>
+  <p>Live conversations require an eligible subscription, a signed-in nickname and your consent. They send conversation text and limited game context (including the name you entered) to our service and its AI provider. To operate the account and verify access, our service keeps the nickname and avatar, account and sign-in identifiers, relevant store purchase/subscription identifiers and status, and usage counts. The store handles payment details. Manage cancellation through the store used for the subscription; deleting a game account does not cancel that subscription. <a href="https://platform.claude.com/docs/en/manage-claude/api-and-data-retention" rel="noopener">Anthropic API data retention</a>.</p>
+  <p><b>Stopping.</b> Untick <i>Use Live for my conversations</i> to stop further conversation requests. Use <i>Delete my account</i> on the Trillion Week Live screen to request account deletion; when the server confirms successful deletion, the account records described above are removed. Cancel any subscription through the store used for it as well.</p>
+  </section>
+
+  <section id="reset">
+  <h2>Starting again</h2>
+  <p>Settings has a Start again section. New week, New lifetime and New Rise life each clear one mode. <b>Restart everything</b> clears all of it from this phone: every save, title, setting, signature, selfie, remembered key and conversation memory, plus the website's offline copy. Then the game goes back to its very first screen. It asks first, and it can't be undone, so download your progress beforehand if you might want it.</p>
+  <p>If you have an online account from an earlier version, Restart everything forgets its sign-in on this phone but doesn't delete it from our server. <a href="#delete">Delete the account</a> first, or email us your nickname afterwards.</p>
+  </section>
+
+  <section id="rules">
+  <h2>Rules for playing online</h2>
+  <p>Online play isn't in this version, but a nickname chosen for Trillion Week Live is held to the same rules. By choosing a nickname you agree to them. There is no tolerance for objectionable content or abusive players.</p>
+  <ul>
+    <li>No nicknames or profile lines that are hateful, sexual, threatening, or that harass a real person.</li>
+    <li>Don't pretend to be someone else, and don't post anyone's personal details.</li>
+    <li>Don't attack or tamper with the server.</li>
+  </ul>
+  <p>The server blocks the worst words before a name is accepted. To report a nickname, email us (see <a href="#support">Support</a>). Offending names are removed, and accounts that break the rules are banned.</p>
+  </section>
+
+  <section id="age">
+  <h2>Age</h2>
+  <p>Trillion Week is financial satire for adults and older teenagers, with mature themes, off-screen crime and threats, and references to drinking. It is not designed for children. The native iOS and Android edition excludes playable casino games and stake-and-payout betting choices for every player. Story references and historical diary entries involving gambling can remain. The website is a separate edition and can contain play-money gambling. The rating shown by your app store applies to that store's release.</p>
+  </section>
+
+  <section id="support">
+  <h2>Support</h2>
+  <p>Questions, problems, reports or deletion requests: <a id="contact" href="mailto:hello@theadaptivemargin.com">hello@theadaptivemargin.com</a>. If you can't reach the game to delete your account, email us your nickname to request manual deletion.</p>
+  <p class="muted">If this page changes, the date at the top changes too.</p>
+  </section>
+
+  <p class="bottom"><a class="back" href="https://trillion-week.netlify.app/"><span aria-hidden="true">←</span> Back to the game</a></p>
+  <section id="policy-page-hosting" aria-labelledby="policyPageHostingTitle">
+  <h2 id="policyPageHostingTitle">Hosting of this policy page</h2>
+  <p>This policy page is hosted on GitHub Pages. GitHub records visitors' IP addresses for security whether or not they are signed in. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a> for how GitHub handles that information.</p>
+  </section>
+
+</main>
+<script>
+  // Inside the app there is no browser back button, so these links do the job.
+  // Going back keeps the game where it was; opened directly, they load the game fresh.
+  document.querySelectorAll("[data-back]").forEach(function (a) {
+    a.addEventListener("click", function (ev) {
+      var same = false;
+      try { same = !!document.referrer && new URL(document.referrer).origin === location.origin; } catch (e) {}
+      if (same && history.length > 1) { ev.preventDefault(); history.back(); }
+    });
+  });
+</script>
+</body>
+</html>
